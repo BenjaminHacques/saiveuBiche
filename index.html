@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Clock</title>
+  <link rel="stylesheet" type="text/css" href="style/style.css">
+</head>
+<body>
+<!--/Ici les appels à tous les scripts js et à la lib JQuery/-->
+<!--/On remarque que tous les composants dont on a besoin sont là : un fichier cible index.html 
+une classe Observable pour respecter et appliquer le pattern Observer, un dossier Views et les vues,
+un dossier Model et son fichier model, et le dossier Controller et son ficher controller.
+Le fichier app.js initialise le tout/-->
+	<img id='biche' src='img/biche.png'>
+
+	</img>
+  <script src="http://code.jquery.com/jquery-2.2.1.js"></script>
+  <script src="js/libs/EventEmitter.js"></script>
+  <script src="js/models/feu.js"></script>
+  <script src="js/models/feuPieton.js"></script>
+  <script src="js/models/feuVoiture.js"></script>
+  <script src="js/views/feuView.js"></script>
+  <script src="js/controllers/feuController.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

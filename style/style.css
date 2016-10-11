@@ -1,0 +1,125 @@
+body, html {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-image: url('../img/road.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	overflow:hidden;
+}
+
+.feuVoiture {
+	width: 5%;
+	height: 7%;
+	border-radius: 50%;
+	position: fixed;
+}
+
+.feuPieton {
+	width: 2.5%;
+	height: 3.5%;
+	border-radius: 50%;
+	position: fixed;
+}
+
+.button {
+	position: fixed;
+	border-radius: 50%;
+}
+
+#feuPieton1 {
+	bottom: 20%;
+	left: 5%;
+}
+#feuPieton2 {
+	bottom: 20%;
+	right: 5%;
+}
+#feuVoiture1 {
+	bottom: 35%;
+	right: 25%;
+}
+#feuVoiture2 {
+	bottom: 38%;
+	left: 45%;
+	width: 2.5%;
+	height: 3.5%;
+}
+#button1 {
+	bottom: 15%;
+	left: 5%;
+}
+#button2 {
+	bottom: 15%;
+	right: 5%;
+}
+
+.p_red {
+	background-color: red;
+	box-shadow:0px 0px 10px red;
+}
+.p_red_c {
+	background-color: red;
+	box-shadow:0px 0px 10px red;
+	-moz-animation-name: clignoteRed;
+	-moz-animation-duration: 1s;
+	-moz-animation-iteration-count:infinite;
+}
+.p_orange {
+	background-color: orange;
+	box-shadow:0px 0px 10px orange;
+}
+.p_orange_c {
+	background-color: orange;
+	box-shadow:0px 0px 10px orange;
+	-moz-animation-name: clignoteOrange;
+	-moz-animation-duration: 1s;
+	-moz-animation-iteration-count:infinite;
+}
+
+.v_green {
+	background-color: green;
+	box-shadow:0px 0px 10px green;
+}
+.v_orange {
+	background-color: orange;
+	box-shadow:0px 0px 10px orange;
+}
+.v_red {
+	background-color: red;
+	box-shadow:0px 0px 10px red;
+}
+
+
+@-moz-keyframes clignoteRed {
+	0%{box-shadow:0px 0px 15px red; opacity: 1;}
+	50%{box-shadow:0px 0px 0px red; opacity: 0.5;}
+	100%{box-shadow:0px 0px 15px red; opacity: 1;}
+}
+@-moz-keyframes clignoteOrange {
+	0%{box-shadow:0px 0px 15px orange; opacity: 1;}
+	50%{box-shadow:0px 0px 0px orange; opacity: 0.5;}
+	100%{box-shadow:0px 0px 15px orange; opacity: 1;}
+}
+
+
+#biche {
+	width: 130px;
+	position: fixed;
+	right: 5%;
+	bottom: 5%;
+}
+
+.bicheTrav {
+	-moz-animation-name: traverse;
+	-moz-animation-duration: 22s;
+	-moz-animation-iteration-count:infinite;
+}
+
+@-moz-keyframes traverse {
+	0%{right: 5%;}
+	50%{right: 95%;}
+	100%{right: 5%;}
+}
